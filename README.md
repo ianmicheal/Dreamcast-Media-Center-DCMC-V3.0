@@ -33,8 +33,9 @@ libxvidcore_1.3.0: libxvid/src/makefile
 
 Then you can build DCMC main binary
 
-Update notes Ian Micheal  
+#Update notes Ian Micheal  
 Sh4 math optimzing using DreamHal Moop :)
 Xvid now using fastmemset from DreamHAL
 Opengl Now using sh4math From DreamHaL
 New theme PVR VQ using less memory
+#libs are rared you have to unpack each before building Importain
