@@ -42,7 +42,8 @@ Opengl Now using sh4math From DreamHAL
 New theme PVR VQ using less memory
 #libs are rared you have to unpack each before building Importain
 #Unpack each one and build before building the DCMC 
-
+#XvID Settings
+<img src="./settings.jpg">
 DreamHAL https://dcemulation.org/phpBB/viewtopic.php?t=105371
 https://dreamcast.wiki/File:DreamHAL-2020-05-13.zip
 About Moopthehedgehog
