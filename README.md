@@ -1,6 +1,8 @@
 # Dreamcast-Media-Center-DCMC-V3.0
 Update of  Josh PH3NOM Pearson 2010-2013 Mediaplayer
 <img src="./theme.jpg">
+<img src="./theme2.jpg">
+<img src="./theme3.jpg">
 This software uses works derived from the independant JPEG group.
 
 All libraries that are used under GPL license include original documentation.
