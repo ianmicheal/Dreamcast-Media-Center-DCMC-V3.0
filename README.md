@@ -35,7 +35,14 @@ Then you can build DCMC main binary
 
 #Update notes Ian Micheal  
 Sh4 math optimzing using DreamHal Moop :)
-Xvid now using fastmemset from DreamHAL
-Opengl Now using sh4math From DreamHaL
+Xvid now using fastmemset from DreamHAL and also ported sh4 asm idct_sh4.c 
+Opengl Now using sh4math From DreamHAL
 New theme PVR VQ using less memory
 #libs are rared you have to unpack each before building Importain
+#Unpack each one and build before building the DCMC 
+
+DreamHAL https://dcemulation.org/phpBB/viewtopic.php?t=105371
+https://dreamcast.wiki/File:DreamHAL-2020-05-13.zip
+About Moopthehedgehog
+One of the best coders i did know sorry to see you go the help and support with learning sh4asm and your wonderful creation DreamHAL 
+Makes a big change to what i do on dreamcast.. :) your missed my freind :)
