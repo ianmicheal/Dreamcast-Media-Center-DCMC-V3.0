@@ -17,20 +17,20 @@ libopengl: GL/makefile
 Dolby Digital Audio Codec:
 liba52: liba52/liba52/makefile
 
-FLAC Audio Codec:
+FLAC Audio Codec: unpack rar
 libflac: libflac/src/libFLAC/makefile
 
 MP4/AAC Audio Codec:
 libfaad_2.27: libfaad/libfaad/makefile
 libmp4ff: libfaad/common/mp4ff/makefile
 
-MP3 Audio Codec:
+MP3 Audio Codec: Unpack rar
 libmpg123_1.13.1: libmpg123/libmpg123/makefile
 
-Mpeg2 Video Codec:
+Mpeg2 Video Codec: unpack rar
 libmpeg2: libmpeg2/libmpeg2/makefile
 
-XviD Video Codec:
+XviD Video Codec: Unpack rar
 libxvidcore_1.3.0: libxvid/src/makefile
 
 Then you can build DCMC main binary
@@ -44,6 +44,8 @@ New theme PVR VQ using less memory
 #Unpack each one and build before building the DCMC 
 #XvID Settings
 <img src="./settings.jpg">
+
+
 DreamHAL https://dcemulation.org/phpBB/viewtopic.php?t=105371
 https://dreamcast.wiki/File:DreamHAL-2020-05-13.zip
 About Moopthehedgehog
