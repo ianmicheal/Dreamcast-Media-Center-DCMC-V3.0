@@ -1,0 +1,89 @@
+From: Wilson Woo <wilson00@HK.Super.NET>
+To: submit@wotsit.demon.co.uk
+Subject: MPEG Video
+
+THIS TEXT CONTAINS ONLY MPEG VIDEO HEADER INFO - BY WILSON WOO
+It's only what I know. Please feel free to update it.
+
+Below is information got from someone.
+
+/*****************************************************************/
+
+Sequence Header
+
+This contains information related to one or more "group-of-pictures"
+
+Byte#      Data                Details
+===================================================================
+1-4        Sequence header     In Hex 000001B3
+           code
+12 bits    Horizontal size     In pixels
+12 bits    Vertical size       In pixels
+ 4 bits    Pel aspect ratio    See below
+18 bits    Picture rate        See below
+ 1 bit     Marker bit          Always 1
+10 bits    VBV buffer size     Minimum buffer needed to decode this
+                               sequence of pictures; in 16KB units
+ 1 bit     Constrained
+           parameter flag
+ 1 bit     Load intra          0: false; 1: true (matrix follows)
+           quantizer matrix
+64 bytes   Intra quantizer     Optional
+           matrix
+ 1 bit     Load nonintra       0: false; 1: true (matrix follows)
+           quantizer matrix
+64 bytes   Nonintra quantizer  Optional
+           matrix
+ -         Squence extension   Optional
+           Data
+ -         User data           Optional application-dependent data
+===================================================================
+
+Aspect raios are defined by a code which represents the height and
+width of the Video image.
+Picture rates are also defined by a code that represents the number
+of pictures that may be displayed each second.
+
+Each group of pictures has a header that contains one "I picture"
+and zero or more B and P pictures. The header is concerned with
+the time synchronisation for the first picture in this group, and
+the closeness of the previous group to this one.
+
+/*****************************************************************/
+
+For picture rate:
+1 = 23.976 frames/sec
+2 = 24
+3 = 25
+4 = 29.97
+5 = 30
+6 = 50
+7 = 59.94
+8 = 60
+
+Here gives an example. Below is Hex dump of first 256 bytes of
+the first Video frame of TEST.MPG from XingMPEG.
+
+00 00 01 B3 16 00 F0 C4 02 A3 20 A5 10 12 12 14
+14 14 16 16 16 16 18 18 19 18 18 1A 1B 1B 1B 1B
+1A 1C 1D 1E 1E 1E 1D 1C 1E 1F 20 21 21 20 1F 1E
+21 23 23 24 23 23 21 25 26 27 27 26 25 29 2A 2A
+2A 29 2D 2D 2D 2D 30 31 30 34 34 38 16 00 F0 C4
+00 00 01 B8 00 08 00 00 00 00 01 00 00 0A 72 00
+00 00 01 01 13 F9 50 02 BC B2 B8 BE 68 8B A4 9F
+C5 B5 CA 00 56 76 39 65 F2 30 8B A6 9D 50 69 E7
+DA FE 13 CF B7 FF 8F F4 CE 7B FA 0E F0 66 AE 1C
+5D E7 00 C8 0A 92 B9 29 3C 21 23 F1 D6 40 13 06
+F0 10 10 C6 27 80 A0 34 E1 C8 E4 0F 74 91 DA C4
+03 A0 DC 03 12 60 18 49 27 1D D4 BC 67 0E 54 8C
+96 FC 5D C0 06 E0 1A 72 11 7C 9A 8D C9 45 89 6D
+CD C4 0B 63 DC 90 18 24 00 EC 84 90 18 10 C9 3B
+1E A7 60 3C 9D 74 80 76 05 0B 02 81 A9 29 39 68
+53 8F 59 F1 BF 93 FB A0 04 01 BC B0 CE 18 E1 25
+
+Sequence header  = (Hex) 00 00 01 B3
+Horizontal size  = 0x160 = 352
+Vertical size    = 0x0F0 = 240
+Pel aspect ratio = [I don't know]
+Picture rate     = 4 = 29.97 frames/sec
+Marker bit       = 1
