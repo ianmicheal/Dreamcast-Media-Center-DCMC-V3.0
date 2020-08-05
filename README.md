@@ -51,3 +51,5 @@ https://dreamcast.wiki/File:DreamHAL-2020-05-13.zip
 About Moopthehedgehog
 One of the best coders i did know sorry to see you go the help and support with learning sh4asm and your wonderful creation DreamHAL 
 Makes a big change to what i do on dreamcast.. :) your missed my freind :)
+Quote from moop "You never leave [the Dreamcast community]. You just take long breaks."
+Well i hope i get to pick your brain in the future :)
